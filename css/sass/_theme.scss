@@ -1032,6 +1032,7 @@ input#SurveySubmitButtonElement {
 
     border: $submitBorder;
     color: $submitColor !important;
+    @include text-shadow($submitTextshadow);
 
     &:hover {
         // Background

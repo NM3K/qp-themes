@@ -15,6 +15,8 @@
   height: 100%;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3674BD', endColorstr='#FF1F426A');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM2NzRiZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFmNDI2YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3674bd), color-stop(100%, #1f426a));
   background-image: -webkit-linear-gradient(#3674bd, #1f426a);
   background-image: -moz-linear-gradient(#3674bd, #1f426a);
@@ -1158,48 +1160,58 @@ input#SurveySubmitButtonElement {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 0px 0px #3674bd inset;
-  -moz-box-shadow: 0px 0px 0px 0px #3674bd inset;
-  box-shadow: 0px 0px 0px 0px #3674bd inset;
+  -webkit-box-shadow: 0px 0px 0px 0px #1f436d inset;
+  -moz-box-shadow: 0px 0px 0px 0px #1f436d inset;
+  box-shadow: 0px 0px 0px 0px #1f436d inset;
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3674BD', endColorstr='#FF578ECF');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3674bd), color-stop(100%, #578ecf));
-  background-image: -webkit-linear-gradient(#3674bd, #578ecf);
-  background-image: -moz-linear-gradient(#3674bd, #578ecf);
-  background-image: -o-linear-gradient(#3674bd, #578ecf);
-  background-image: linear-gradient(#3674bd, #578ecf);
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1F436D', endColorstr='#FF2A5B95');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmNDM2ZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJhNWI5NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1f436d), color-stop(100%, #2a5b95));
+  background-image: -webkit-linear-gradient(#1f436d, #2a5b95);
+  background-image: -moz-linear-gradient(#1f436d, #2a5b95);
+  background-image: -o-linear-gradient(#1f436d, #2a5b95);
+  background-image: linear-gradient(#1f436d, #2a5b95);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  border: 1px solid #3674bd;
+  border: 1px solid #1f436d;
   color: white !important;
+  text-shadow: 0px 0px 0px transparent;
 }
-/* line 1036, ../sass/_theme.scss */
+/* line 1037, ../sass/_theme.scss */
 input#SurveySubmitButtonElement:hover {
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3674BD', endColorstr='#FF4381C9');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3674bd), color-stop(100%, #4381c9));
-  background-image: -webkit-linear-gradient(#3674bd, #4381c9);
-  background-image: -moz-linear-gradient(#3674bd, #4381c9);
-  background-image: -o-linear-gradient(#3674bd, #4381c9);
-  background-image: linear-gradient(#3674bd, #4381c9);
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF1F436D', endColorstr='#FF254F81');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmNDM2ZCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1NGY4MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1f436d), color-stop(100%, #254f81));
+  background-image: -webkit-linear-gradient(#1f436d, #254f81);
+  background-image: -moz-linear-gradient(#1f436d, #254f81);
+  background-image: -o-linear-gradient(#1f436d, #254f81);
+  background-image: linear-gradient(#1f436d, #254f81);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* line 1050, ../sass/_theme.scss */
+/* line 1051, ../sass/_theme.scss */
 .newSurveynameContainer {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b2b2b2), color-stop(100%, #b2b2b2));
-  background-image: -webkit-linear-gradient(#b2b2b2, #b2b2b2);
-  background-image: -moz-linear-gradient(#b2b2b2, #b2b2b2);
-  background-image: -o-linear-gradient(#b2b2b2, #b2b2b2);
-  background-image: linear-gradient(#b2b2b2, #b2b2b2);
+  background-color: #3f7cbb;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3F7CBB', endColorstr='#FF25496F');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNmN2NiYiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMzk2ZmE4Ii8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiMyYzU2ODIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNTQ5NmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3f7cbb), color-stop(50%, #396fa8), color-stop(51%, #2c5682), color-stop(100%, #25496f));
+  background-image: -webkit-linear-gradient(top, #3f7cbb 0%, #396fa8 50%, #2c5682 51%, #25496f 100%);
+  background-image: -moz-linear-gradient(top, #3f7cbb 0%, #396fa8 50%, #2c5682 51%, #25496f 100%);
+  background-image: -o-linear-gradient(top, #3f7cbb 0%, #396fa8 50%, #2c5682 51%, #25496f 100%);
+  background-image: linear-gradient(top, #3f7cbb 0%, #396fa8 50%, #2c5682 51%, #25496f 100%);
   border-width: 0px 0px 1px 0px;
   border-color: #dddddd;
   border-style: solid;
 }
-/* line 1069, ../sass/_theme.scss */
+/* line 1070, ../sass/_theme.scss */
 .newSurveynameContainer .newSurveyTitle {
-  color: black;
+  color: white;
   text-shadow: 0px 0px 0px transparent;
   font-weight: bold;
 }

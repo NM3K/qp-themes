@@ -11,10 +11,10 @@ $experimental-support-for-svg: true;
  */
 
 // Background
-$backgroundType: gradient; // gradient, image, plain
-$backgroundImageUrl: false;
-$backgroundStart: #F8F8F8;
-$backgroundEnd: #C6C7C9;
+$backgroundType: image; // gradient, image, plain
+$backgroundImageUrl: "../images/textures/aluminium.jpg";
+$backgroundStart: false;
+$backgroundEnd: false;
 $backgroundColor: false;
 
 // Body
@@ -28,22 +28,23 @@ $exitBg: #DBDBDB;
 $fontFamily: $lucida-grande-font-stack;
 
 // Headings
-$headingGradient: false; // 1: 2 color grandient, 2: 4 color gradient
+$headingGradient: 1; // 1: 2 color grandient, 2: 4 color gradient
 $headingBackground: #B2B2B2;
-$headingColor: #000000;
-$headingTextshadow: 0px 0px 0px transparent;
+$headingColor: #FFFFFF;
+$headingTextshadow: 1px 1px 5px #35FC16;
 $headingBorderWidth: 0px 0px 0px 0px;
 $headingBorderColor: #CCC;
 $headingBorderStyle: solid;
 $headingWeight: bold;
 
 // Submit Button
-$submitRounded: false;
+$submitRounded: true;
 $submitBackground: gradient; // gradient, plain
-$submitBackgroundColor: #0483CA;
-$submitBorder: 1px solid #0483CA;
+$submitBackgroundColor: #AAA;
+$submitBorder: 1px solid #AAA;
 $submitColor: #FFF;
 $submitShadow: true;
+$submitTextshadow: 1px 1px 5px #35FC16;
 
 // Option Hover
 $optionHover: #C3FEBA;
