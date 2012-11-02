@@ -1,0 +1,54 @@
+/* 
+ * BASE IMPORTS 
+ */
+@import "compass/css3";
+@import "font-stack"; // font list: https://github.com/lloydk/font-stack/blob/master/lib/stylesheets/_font-stack.scss
+@import "compass/utilities/general/hacks";  /* filter-gradient needs this */
+$experimental-support-for-svg: true;
+
+/*	
+ * VARS 
+ */
+
+// Background
+$backgroundType: gradient; // gradient, image, plain
+$backgroundImageUrl: false;
+$backgroundStart: #F8F8F8;
+$backgroundEnd: #C6C7C9;
+$backgroundColor: false;
+
+// Body
+$containerShadow: true;
+$containerShadowColor: #AAAAAA;
+
+// Exit
+$exitBg: #DBDBDB;
+
+// Font
+$fontFamily: $lucida-grande-font-stack;
+
+// Headings
+$headingGradient: false; // 1: 2 color grandient, 2: 4 color gradient
+$headingBackground: #B2B2B2;
+$headingColor: #000000;
+$headingTextshadow: 0px 0px 0px transparent;
+$headingBorderWidth: 0px 0px 0px 0px;
+$headingBorderColor: #CCC;
+$headingBorderStyle: solid;
+$headingWeight: bold;
+
+// Submit Button
+$submitRounded: false;
+$submitBackground: gradient; // gradient, plain
+$submitBackgroundColor: #0483CA;
+$submitBorder: 1px solid #0483CA;
+$submitColor: #FFF;
+$submitShadow: true;
+
+// Option Hover
+$optionHover: #C3FEBA;
+
+/* 
+ * THEME IMPORT 
+ */
+@import "_theme";
