@@ -1,0 +1,86 @@
+/* 
+ * BASE IMPORTS 
+ */
+@import "compass/css3";
+@import "rgbapng";
+@import "font-stack"; // font list: https://github.com/lloydk/font-stack/blob/master/lib/stylesheets/_font-stack.scss
+@import "compass/utilities/general/hacks";  /* filter-gradient needs this */
+$experimental-support-for-svg: true;
+
+/*	
+ * VARS 
+ */
+// Background
+$backgroundType: image; // gradient, image, plain
+$backgroundImageUrl: "../images/textures/zen.jpg";
+$backgroundStart: false;
+$backgroundEnd: false;
+$backgroundColor: #333;
+
+// Body Shadow
+$containerInnerShadow: false;
+$containerInnerShadowColor: #EDC2A1;
+$containerOuterShadow: false;
+$containerOuterShadowColor: #777;
+
+// Exit
+$exitBg: #DBDBDB;
+$exitColor: #1B9CB7;
+$exitFontWeight: bold;
+
+// Font
+$fontFamily: $cambria-font-stack;
+
+// Headings
+$headingGradient: 1; // 1: 2 color grandient, 2: 4 color gradient, false: plain
+$headingBackgroundColor1: #989184;
+$headingBackgroundColor2: #4D4230;
+$headingBackgroundColor3: transparent;
+$headingBackgroundColor4: transparent;
+$headingColor: #FFF;
+$headingTextshadow: 0px 0px 0px #FFF;
+$headingBorderWidth: 0px 0px 0px 0px;
+$headingBorderColor: #bbb;
+$headingBorderStyle: solid;
+$headingWeight: bold;
+
+// Submit Button
+$submitRounded: true;
+$submitBackground: gradient; // gradient, plain
+$submitBackgroundColor1: #989184;
+$submitBackgroundColor2: #4D4230;
+$submitBorder: 0px solid #AAA;
+$submitColor: #FFF;
+$submitShadow: false;
+$submitTextshadow: 0px 0px 0px #FFF;
+
+// Option Hover
+$optionHover: #F0EDDF;
+
+/* 
+ * THEME IMPORT 
+ */
+@import "_theme";
+
+/*
+ * Extra Attributes
+ */
+.newSurveyContainerTable {
+	background:#FFF;
+	@include box-shadow(
+		0px 0px 15px #777,
+		5px 5px 15px #EDC2A1 inset
+	);
+}
+.SurveyContent {
+	@include rgba-background(rgba(255, 255, 255, 0.75));
+}
+.QuestionDescription, .QuestionText, .AnswerText, .AltQuestionText, .AltAnswerText, .SurveyHeader, .SurveyFooter, .QuestionError, .SurveyValidation, .SurveySectionHeading, .SurveySectionSubHeading, .SurveySectionHeadingSmall {
+	color: #625847;
+}
+.QuestionText {
+	font-style: italic;
+}
+.AnswerText {
+	color: #999285;
+}

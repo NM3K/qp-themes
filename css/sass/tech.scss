@@ -1,0 +1,80 @@
+/* 
+ * BASE IMPORTS 
+ */
+@import "compass/css3";
+@import "rgbapng";
+@import "font-stack"; // font list: https://github.com/lloydk/font-stack/blob/master/lib/stylesheets/_font-stack.scss
+@import "compass/utilities/general/hacks";  /* filter-gradient needs this */
+$experimental-support-for-svg: true;
+
+/*	
+ * VARS 
+ */
+// Background
+$backgroundType: image; // gradient, image, plain
+$backgroundImageUrl: "../images/textures/tech.jpg";
+$backgroundStart: false;
+$backgroundEnd: false;
+$backgroundColor: #333;
+
+// Body Shadow
+$containerInnerShadow: false;
+$containerInnerShadowColor: #EDC2A1;
+$containerOuterShadow: true;
+$containerOuterShadowColor: #333;
+
+// Exit
+$exitBg: #DBDBDB;
+$exitColor: #1B9CB7;
+$exitFontWeight: bold;
+
+// Font
+$fontFamily: $lucida-grande-font-stack;
+
+// Headings
+$headingGradient: 1; // 1: 2 color grandient, 2: 4 color gradient, false: plain
+$headingBackgroundColor1: #686868;
+$headingBackgroundColor2: #282828;
+$headingBackgroundColor3: transparent;
+$headingBackgroundColor4: transparent;
+$headingColor: #00BAFF;
+$headingTextshadow: 0px 0px 2px #000;
+$headingBorderWidth: 0px 0px 1px 0px;
+$headingBorderColor: #bbb;
+$headingBorderStyle: solid;
+$headingWeight: bold;
+
+// Submit Button
+$submitRounded: true;
+$submitBackground: gradient; // gradient, plain
+$submitBackgroundColor1: #686868;
+$submitBackgroundColor2: #282828;
+$submitBorder: 0px solid #AAA;
+$submitColor: #00BAFF;
+$submitShadow: false;
+$submitTextshadow: 0px 0px 2px #000;
+
+// Option Hover
+$optionHover: #E4F3F7;
+
+/* 
+ * THEME IMPORT 
+ */
+@import "_theme";
+
+/*
+ * Extra Attributes
+ */
+.newSurveyContainerTable {
+	background: transparent;
+	border: 0px solid transparent;
+}
+.newSurveynameContainer {
+	border:1px solid #555;
+}
+.QuestionDescription, .QuestionText, .AnswerText, .AltQuestionText, .AltAnswerText, .SurveyHeader, .SurveyFooter, .QuestionError, .SurveyValidation, .SurveySectionHeading, .SurveySectionSubHeading, .SurveySectionHeadingSmall {
+	color: #000;
+}
+.AnswerText {
+	color: #8D8D8D;
+}

@@ -1,5 +1,25 @@
-<?php $themes = array('default','aluminium','blank','blue','blue-2','classic','green','green-2','grey','navy','navy-2','orange','orange-2','organic','red','red-2','tech','zen'); ?>
-<html>
+<?php 
+$themes = array(
+	'default',
+	'aluminium',
+	'blank',
+	'blue',
+	'blue-2',
+	'classic',
+	'green',
+	'green-2',
+	'grey',
+	'navy',
+	'navy-2',
+	'orange',
+	'orange-2',
+	'organic',
+	'red',
+	'red-2',
+	'tech',
+	'zen'
+); 
+?><html>
 	<head>
 		<title>QuestionPro Themes</title>
 		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet">

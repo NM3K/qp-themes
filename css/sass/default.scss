@@ -4,50 +4,69 @@
 @import "compass/css3";
 @import "font-stack"; // font list: https://github.com/lloydk/font-stack/blob/master/lib/stylesheets/_font-stack.scss
 @import "compass/utilities/general/hacks";  /* filter-gradient needs this */
+$experimental-support-for-svg: true;
 
 /*	
  * VARS 
  */
-
 // Background
 $backgroundType: gradient; // gradient, image, plain
 $backgroundImageUrl: false;
 $backgroundStart: #F8F8F8;
-$backgroundEnd: #C6C7C9;
-$backgroundColor: false;
+$backgroundEnd: #C7C7C7;
+$backgroundColor: transparent;
 
-// Body
-$containerShadow: true;
-$containerShadowColor: #AAAAAA;
+// Body Shadow
+$containerInnerShadow: true;
+$containerInnerShadowColor: #B4B4B4;
+$containerOuterShadow: false;
+$containerOuterShadowColor: #999;
 
 // Exit
 $exitBg: #DBDBDB;
+$exitColor: #0073C9;
+$exitFontWeight: bold;
 
 // Font
 $fontFamily: $lucida-grande-font-stack;
 
 // Headings
-$headingGradient: true;
-$headingBackground: #C0C0C0;
+$headingGradient: 1; // 1: 2 color grandient, 2: 4 color gradient, false: plain
+$headingBackgroundColor1: #BEBEBE;
+$headingBackgroundColor2: #8D8D8D;
+$headingBackgroundColor3: transparent;
+$headingBackgroundColor4: transparent;
 $headingColor: #FFFFFF;
-$headingTextshadow: 0 0 4px rgba(2, 3, 3, 0.75);
-$headingBorderWidth: 1px;
-$headingBorderColor: #DDD;
+$headingTextshadow: 0px 0px 0px #FFF;
+$headingBorderWidth: 0px 0px 0px 0px;
+$headingBorderColor: transparent;
 $headingBorderStyle: solid;
 $headingWeight: bold;
 
 // Submit Button
 $submitRounded: true;
 $submitBackground: gradient; // gradient, plain
-$submitBackgroundColor: #0483CA;
-$submitBorder: 1px solid #0483CA;
-$submitColor: #FFF;
-$submitShadow: true;
+$submitBackgroundColor1: #BEBEBE;
+$submitBackgroundColor2: #8D8D8D;
+$submitBorder: 0px solid #AAA;
+$submitColor: #FFFFFF;
+$submitShadow: false;
+$submitTextshadow: 0px 0px 0px #FFF;
 
 // Option Hover
-$optionHover: #F8F8F8;
+$optionHover: #D5EFFA;
 
 /* 
  * THEME IMPORT 
  */
 @import "_theme";
+
+/*
+ * Extra Attributes
+ */
+.QuestionDescription, .QuestionText, .AnswerText, .AltQuestionText, .AltAnswerText, .SurveyHeader, .SurveyFooter, .QuestionError, .SurveyValidation, .SurveySectionHeading, .SurveySectionSubHeading, .SurveySectionHeadingSmall {
+	color: #333;
+}
+.AnswerText {
+	color: #555;
+}

@@ -9,42 +9,49 @@ $experimental-support-for-svg: true;
 /*	
  * VARS 
  */
-
 // Background
 $backgroundType: gradient; // gradient, image, plain
 $backgroundImageUrl: false;
-$backgroundStart: #C4C4C6;
+$backgroundStart: #C3C3C3;
 $backgroundEnd: #727272;
-$backgroundColor: #FFF;
+$backgroundColor: transparent;
 
-// Body
-$containerShadow: true;
-$containerShadowColor: #AAAAAA;
+// Body Shadow
+$containerInnerShadow: false;
+$containerInnerShadowColor: transparent;
+$containerOuterShadow: true;
+$containerOuterShadowColor: #999;
 
 // Exit
 $exitBg: #DBDBDB;
+$exitColor: #0073C9;
+$exitFontWeight: bold;
 
 // Font
 $fontFamily: $lucida-grande-font-stack;
 
 // Headings
-$headingGradient: 2;
-$headingBackground: #3f7cbb;
+$headingGradient: 2; // 1: 2 color grandient, 2: 4 color gradient, false: plain
+$headingBackgroundColor1: #3F7CBF;
+$headingBackgroundColor2: #3B6EAD;
+$headingBackgroundColor3: #2F65A3;
+$headingBackgroundColor4: #285691;
 $headingColor: #FFFFFF;
-$headingTextshadow: 0px 0px 0px transparent;
-$headingBorderWidth: 0px 0px 1px 0px;
-$headingBorderColor: #DDD;
+$headingTextshadow: 0px 0px 0px #FFF;
+$headingBorderWidth: 0px 0px 0px 0px;
+$headingBorderColor: transparent;
 $headingBorderStyle: solid;
 $headingWeight: bold;
 
 // Submit Button
 $submitRounded: true;
-$submitBackground: gradient; // gradient, plain
-$submitBackgroundColor: #3674BD;
-$submitBorder: 1px solid #3674BD;
-$submitColor: #FFF;
+$submitBackground: plain; // gradient, plain
+$submitBackgroundColor1: #3674BD;
+$submitBackgroundColor2: transparent;
+$submitBorder: 0px solid #AAA;
+$submitColor: #FFFFFF;
 $submitShadow: false;
-$submitTextshadow: 0px 0px 0px transparent;
+$submitTextshadow: 0px 0px 0px #FFF;
 
 // Option Hover
 $optionHover: #EAF1F9;

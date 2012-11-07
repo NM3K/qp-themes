@@ -1,0 +1,73 @@
+/* 
+ * BASE IMPORTS 
+ */
+@import "compass/css3";
+@import "font-stack"; // font list: https://github.com/lloydk/font-stack/blob/master/lib/stylesheets/_font-stack.scss
+@import "compass/utilities/general/hacks";  /* filter-gradient needs this */
+$experimental-support-for-svg: true;
+
+/*	
+ * VARS 
+ */
+// Background
+$backgroundType: plain; // gradient, image, plain
+$backgroundImageUrl: false;
+$backgroundStart: false;
+$backgroundEnd: false;
+$backgroundColor: #F3F3F3;
+
+// Body Shadow
+$containerInnerShadow: false;
+$containerInnerShadowColor: transparent;
+$containerOuterShadow: false;
+$containerOuterShadowColor: transparent;
+
+// Exit
+$exitBg: #DBDBDB;
+$exitColor: #0073C9;
+$exitFontWeight: bold;
+
+// Font
+$fontFamily: $lucida-grande-font-stack;
+
+// Headings
+$headingGradient: plain; // 1: 2 color grandient, 2: 4 color gradient, false: plain
+$headingBackgroundColor1: #EFEFEF;
+$headingBackgroundColor2: transparent;
+$headingBackgroundColor3: transparent;
+$headingBackgroundColor4: transparent;
+$headingColor: #555555;
+$headingTextshadow: 0px 0px 0px #FFF;
+$headingBorderWidth: 0px 0px 1px 0px;
+$headingBorderColor: #bbb;
+$headingBorderStyle: solid;
+$headingWeight: bold;
+
+// Submit Button
+$submitRounded: true;
+$submitBackground: plain; // gradient, plain
+$submitBackgroundColor1: #EFEFEF;
+$submitBackgroundColor2: transparent;
+$submitBorder: 1px solid #AAA;
+$submitColor: #555555;
+$submitShadow: false;
+$submitTextshadow: 0px 0px 0px #FFF;
+
+// Option Hover
+$optionHover: #F3F3F3;
+
+/* 
+ * THEME IMPORT 
+ */
+@import "_theme";
+
+/*
+ * Extra Attributes
+ */
+.newSurveyContainerTable {
+    border: 1px solid #CCCCCC;
+}
+
+.newSurveynameContainer {
+    @include box-shadow(0 1px 2px #FFFFFF inset);
+}

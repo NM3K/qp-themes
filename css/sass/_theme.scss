@@ -63,19 +63,23 @@
 
 // Container outer shadow? 
 @if $containerOuterShadow == true {
-    .newSurveyLogoContainer {
-        -webkit-box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
-        -moz-box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
-        box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
-        border-left: 1px solid $containerOuterShadowColor;
-        border-top: 1px solid $containerOuterShadowColor;
-        border-right: 1px solid $containerOuterShadowColor;
-    }
-    .newSurveyQuestionsTable {
-        border: 1px solid darken($containerOuterShadowColor, 5%);
-        -moz-box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
-        -webkit-box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
-        box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    // .newSurveyLogoContainer {
+    //     -webkit-box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    //     -moz-box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    //     box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    //     border-left: 1px solid $containerOuterShadowColor;
+    //     border-top: 1px solid $containerOuterShadowColor;
+    //     border-right: 1px solid $containerOuterShadowColor;
+    // }
+    // .newSurveyQuestionsTable {
+    //     border: 1px solid darken($containerOuterShadowColor, 5%);
+    //     -moz-box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    //     -webkit-box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    //     box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+    // }
+    .newSurveyContainerTable {
+        @include box-shadow(0px 0px 15px $containerOuterShadowColor);
+        border: 1px solid $containerOuterShadowColor;
     }
 }
 
@@ -198,6 +202,7 @@
 #SurveySubmitButton {
     padding-top:15px;
     padding-bottom:15px;
+    margin-bottom: 10px;
 }
 
 .SurveyTableHeader {
@@ -645,7 +650,8 @@ a.scalePeg:hover {
 }
 
 .newSurveyContainerTable {
-    padding-bottom: 70px;
+    // padding-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .newSurveynameContainer {
@@ -677,12 +683,15 @@ a.scalePeg:hover {
 a.newSurveyExit:link, 
 a.newSurveyExit:visited {
     font-family: $fontFamily;
-    font-size: 13px;
-    font-weight: bold;
-    color: #0073c9;
+    font-size: 12px;
+    color: $exitColor;
+    font-weight: $exitFontWeight;
     text-decoration: none;
     padding-left: 15px;
     padding-right: 13px;
+}
+a.newSurveyExit:hover {
+    text-decoration: underline;
 }
 
 .newSurveyExitArrow {
@@ -702,6 +711,7 @@ a.newSurveyExit:visited {
     text-align: right;
     line-height: 8px;
     padding-left: 5px;
+    padding-bottom:3px;
 }
 
 .newSurveyFooterTable {
@@ -1036,19 +1046,21 @@ input#SurveySubmitButtonElement {
     }
 
     @if $submitShadow == true {
-        @include box-shadow(0px 0px 3px 1px darken($submitBackgroundColor, 10%) inset);
+        @include box-shadow(0px 0px 2px darken($submitBackgroundColor1, 10%));
     } @else {
-        @include box-shadow(0px 0px 0px 0px $submitBackgroundColor inset);
+        @include box-shadow(0px 0px 0px 0px $submitBackgroundColor1 inset);
     }
 
     // Background
     @if $submitBackground == gradient {
-        @include filter-gradient($submitBackgroundColor, lighten($submitBackgroundColor, 10%));
-        @include background-image(linear-gradient($submitBackgroundColor, lighten($submitBackgroundColor, 10%)));
+        @include filter-gradient($submitBackgroundColor1, $submitBackgroundColor2);
+        @include background-image(linear-gradient($submitBackgroundColor1, $submitBackgroundColor2));
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        // background-attachment: fixed;
     } @else if $submitBackground == plain {
-        background-color: $submitBackgroundColor;
+        background-color: $submitBackgroundColor1;
+        @include filter-gradient($submitBackgroundColor1, $submitBackgroundColor1);
+        @include background-image(linear-gradient($submitBackgroundColor1, $submitBackgroundColor1));
     } 
 
     border: $submitBorder;
@@ -1058,12 +1070,14 @@ input#SurveySubmitButtonElement {
     &:hover {
         // Background
         @if $submitBackground == gradient {
-            @include filter-gradient($submitBackgroundColor, lighten($submitBackgroundColor, 5%));
-            @include background-image(linear-gradient($submitBackgroundColor, lighten($submitBackgroundColor, 5%)));
+            @include filter-gradient($submitBackgroundColor2, $submitBackgroundColor1);
+            @include background-image(linear-gradient($submitBackgroundColor2, $submitBackgroundColor1));
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            // background-attachment: fixed;
         } @else if $submitBackground == plain {
-            background-color: darken($submitBackgroundColor, 10%);
+            background-color: darken($submitBackgroundColor1, 10%);
+            @include filter-gradient(darken($submitBackgroundColor1, 10%), darken($submitBackgroundColor1, 10%));
+            @include background-image(linear-gradient(darken($submitBackgroundColor1, 10%), darken($submitBackgroundColor1, 10%)));
         }
     }
 
@@ -1071,17 +1085,38 @@ input#SurveySubmitButtonElement {
 
 .newSurveynameContainer {
     @if $headingGradient == 1 {
-        @include filter-gradient(darken($headingBackground, 20%), $headingBackground);
-        @include background-image(linear-gradient(darken($headingBackground, 20%), $headingBackground));
+
+        @include filter-gradient($headingBackgroundColor1, $headingBackgroundColor2);
+        @include background-image(
+            linear-gradient(
+                top,
+                $headingBackgroundColor1, 
+                $headingBackgroundColor2
+            )
+        );
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        // background-attachment: fixed;
+
     } @else if $headingGradient == 2 {
-        background-color: $headingBackground; // Old browsers
-        @include filter-gradient($headingBackground, darken($headingBackground, 20%), vertical); // IE6-8
-        @include background-image(linear-gradient(top, $headingBackground 0%, darken($headingBackground, 5%) 50%, darken($headingBackground, 15%) 51%, darken($headingBackground, 20%) 100%));
+
+        background-color: $headingBackgroundColor1; // Old browsers
+
+        @include filter-gradient($headingBackgroundColor1, darken($headingBackgroundColor4, 20%), vertical); // IE6-8
+
+        @include background-image(
+            linear-gradient(
+                top, 
+                $headingBackgroundColor1 0%, 
+                $headingBackgroundColor2 50%, 
+                $headingBackgroundColor3 51%, 
+                $headingBackgroundColor4 100%
+            )
+        );
 
     } @else {
-        @include background-image(linear-gradient($headingBackground, $headingBackground));
+
+        @include background-image(linear-gradient($headingBackgroundColor1, $headingBackgroundColor1));
+
     }
 
     border-width: $headingBorderWidth;
