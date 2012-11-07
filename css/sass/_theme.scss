@@ -37,15 +37,15 @@
     }
 }
 
-// Container shadow? 
-@if $containerShadow == true {
+// Container inner shadow? 
+@if $containerInnerShadow == true {
     .newSurveyLogoContainer {
-        -webkit-box-shadow: 5px 5px 5px -5px $containerShadowColor inset, -5px 0 5px -5px $containerShadowColor inset;
-        -moz-box-shadow: 5px 5px 5px -5px $containerShadowColor inset, -5px 0 5px -5px $containerShadowColor inset;
-        box-shadow: 5px 5px 5px -5px $containerShadowColor inset, -5px 0 5px -5px $containerShadowColor inset;
-        border-left: 1px solid $containerShadowColor;
-        border-top: 1px solid $containerShadowColor;
-        border-right: 1px solid $containerShadowColor;
+        -webkit-box-shadow: 5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset;
+        -moz-box-shadow: 5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset;
+        box-shadow: 5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset;
+        border-left: 1px solid $containerInnerShadowColor;
+        border-top: 1px solid $containerInnerShadowColor;
+        border-right: 1px solid $containerInnerShadowColor;
     }
     // .newSurveynameContainer {
     //     -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.05), inset 0 2px rgba(255,255,255,.28);
@@ -54,10 +54,28 @@
     //     border: solid 1px #b8b8b8;
     // }
     .newSurveyQuestionsTable {
-        border: 1px solid darken($containerShadowColor, 5%);
-        -moz-box-shadow: inset 5px 0 5px -5px $containerShadowColor, inset -5px 0 5px -5px $containerShadowColor;
-        -webkit-box-shadow: inset 5px 0 5px -5px $containerShadowColor, inset -5px 0 5px -5px $containerShadowColor;
-        box-shadow: inset 5px 0 5px -5px $containerShadowColor, inset -5px 0 5px -5px $containerShadowColor;
+        border: 1px solid darken($containerInnerShadowColor, 5%);
+        -moz-box-shadow: inset 5px 0 5px -5px $containerInnerShadowColor, inset -5px 0 5px -5px $containerInnerShadowColor;
+        -webkit-box-shadow: inset 5px 0 5px -5px $containerInnerShadowColor, inset -5px 0 5px -5px $containerInnerShadowColor;
+        box-shadow: inset 5px 0 5px -5px $containerInnerShadowColor, inset -5px 0 5px -5px $containerInnerShadowColor;
+    }
+}
+
+// Container outer shadow? 
+@if $containerOuterShadow == true {
+    .newSurveyLogoContainer {
+        -webkit-box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+        -moz-box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+        box-shadow: 5px 5px 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+        border-left: 1px solid $containerOuterShadowColor;
+        border-top: 1px solid $containerOuterShadowColor;
+        border-right: 1px solid $containerOuterShadowColor;
+    }
+    .newSurveyQuestionsTable {
+        border: 1px solid darken($containerOuterShadowColor, 5%);
+        -moz-box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+        -webkit-box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
+        box-shadow: 5px 0 5px -5px $containerOuterShadowColor, -5px 0 5px -5px $containerOuterShadowColor;
     }
 }
 
@@ -390,6 +408,9 @@ div.freeSignupButtonHover {
 .OptionHover {
     background: $optionHover; 
     cursor:pointer; 
+}
+.newMatrixHover {
+    background: $optionHover; 
 }
 
 .OptionHighlight, 

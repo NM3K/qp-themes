@@ -17,9 +17,11 @@ $backgroundStart: false;
 $backgroundEnd: false;
 $backgroundColor: false;
 
-// Body
-$containerShadow: true;
-$containerShadowColor: #AAAAAA;
+// Body Shadow
+$containerInnerShadow: false;
+$containerInnerShadowColor: transparent;
+$containerOuterShadow: true;
+$containerOuterShadowColor: #AAAAAA;
 
 // Exit
 $exitBg: #DBDBDB;

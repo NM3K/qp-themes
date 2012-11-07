@@ -1,28 +1,16 @@
 /*
-Syntax error: Undefined variable: "$submitTextshadow".
-        on line 1035 of /home/fedeisas/Desktop/qp/css/sass/_theme.scss, in `text-shadow'
-        from line 1035 of /home/fedeisas/Desktop/qp/css/sass/_theme.scss
-        from line 53 of /home/fedeisas/Desktop/qp/css/sass/default.scss
+Syntax error: Undefined variable: "$containerInnerShadow".
+        on line 41 of /home/fedeisas/sites/qp-themes/css/sass/_theme.scss
+        from line 53 of /home/fedeisas/sites/qp-themes/css/sass/default.scss
 
 Backtrace:
-/home/fedeisas/Desktop/qp/css/sass/_theme.scss:1035:in `text-shadow'
-/home/fedeisas/Desktop/qp/css/sass/_theme.scss:1035
-/home/fedeisas/Desktop/qp/css/sass/default.scss:53
+/home/fedeisas/sites/qp-themes/css/sass/_theme.scss:41
+/home/fedeisas/sites/qp-themes/css/sass/default.scss:53
 /var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/node.rb:40:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:255:in `block in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:255:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:255:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/operation.rb:74:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/node.rb:40:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:202:in `visit_if'
 /var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
@@ -85,4 +73,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$submitTextshadow\".\A         on line 1035 of /home/fedeisas/Desktop/qp/css/sass/_theme.scss, in `text-shadow'\A         from line 1035 of /home/fedeisas/Desktop/qp/css/sass/_theme.scss\A         from line 53 of /home/fedeisas/Desktop/qp/css/sass/default.scss"; }
+  content: "Syntax error: Undefined variable: \"$containerInnerShadow\".\A         on line 41 of /home/fedeisas/sites/qp-themes/css/sass/_theme.scss\A         from line 53 of /home/fedeisas/sites/qp-themes/css/sass/default.scss"; }
