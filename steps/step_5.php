@@ -1,31 +1,3 @@
-
-
-
-
-
-
-
-  
-
-
-
-<!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
-
-  <!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
 <!doctype html>
 
 <html  >
@@ -95,7 +67,7 @@ d.write('<sc'+'ript src="'+
 
       
 
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/classic.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/<?=$theme?>.css">
 
     
 
@@ -138,7 +110,7 @@ d.write('<sc'+'ript src="'+
 
     
       <div style='position: fixed; top: 0px; left: 0px; width: 100%;z-index:1000;'>
-	<table id="headerBrandingTable" width="100%" cellpadding="0" cellspacing="0" class="position-fixed-top newFreeHeaderBar">
+  <table id="headerBrandingTable" width="100%" cellpadding="0" cellspacing="0" class="position-fixed-top newFreeHeaderBar">
         <tr>
             <td class="link_blueText" style="padding-left: 5px;">
                 
@@ -157,17 +129,17 @@ d.write('<sc'+'ript src="'+
                         <td>
                           
                             <script>utmx_section("COPY")</script>
-			      <span class="newFreePoweredText">This free survey is powered by</span>
-			      <img src="http://surveys.questionpro.com/images/run/themev1/newTemplateLogo.png" class="newFreeHeaderLogo">
+            <span class="newFreePoweredText">This free survey is powered by</span>
+            <img src="http://surveys.questionpro.com/images/run/themev1/newTemplateLogo.png" class="newFreeHeaderLogo">
                             </noscript>
-			  
+        
                         </td>
                         <td valign="top">
-			  
+        
                             <script>utmx_section("BUTTON")</script>
-			      <img src="http://surveys.questionpro.com/images/run/themev1/createSurveyBtn.png" style="margin-top:0px;">
+            <img src="http://surveys.questionpro.com/images/run/themev1/createSurveyBtn.png" style="margin-top:0px;">
                             </noscript>
-			  
+        
                         </td>
                       </tr>
                     </table>
@@ -206,12 +178,12 @@ d.write('<sc'+'ript src="'+
     <table width="930" align="center" cellpadding="0" cellspacing="0" class="newSurveyContainerTable">
       <tr> 
         <td valign="top">
-	  <table width="930" align="center" cellpadding="0" cellspacing="0">
-	    <tr> 
-	      <td class="SurveyContent" id="SurveyContent">
-	        <!-- END /jsp/run/header.jsp -->
-		
-		<div id="SurveyAjaxContainer" >
+    <table width="930" align="center" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td class="SurveyContent" id="SurveyContent">
+          <!-- END /jsp/run/header.jsp -->
+    
+    <div id="SurveyAjaxContainer" >
 
 
 
@@ -277,9 +249,9 @@ d.write('<sc'+'ript src="'+
 
         <a title="Survey Software" href="http://www.questionpro.com//a/showEntry.do?utm_source=QuestionPro&utm_medium=surveyref&utm_content=poweredbydone" style="text-decoration:none;">
          
-	  <div style="color:#5f5f5f;position:relative;top:-15px;font-family: arial;font-size: 14px;">Online Surveys Powered By</div>
+    <div style="color:#5f5f5f;position:relative;top:-15px;font-family: arial;font-size: 14px;">Online Surveys Powered By</div>
           <img src="http://surveys.questionpro.com/images/qphome/QP-logo-inside.png" border="0"></img>
-	 
+   
         </a>
 
           </td>
@@ -298,15 +270,15 @@ d.write('<sc'+'ript src="'+
 
 
 
-	        </div>
+          </div>
 
-		
-	        <!--Close up the hard width table from run/header.jsp-->
-	      </td>
+    
+          <!--Close up the hard width table from run/header.jsp-->
+        </td>
             </tr>
           </table>
 
-	</td>
+  </td>
       </tr>
     </table>
 
@@ -332,19 +304,19 @@ d.write('<sc'+'ript src="'+
         
           
             <span class="newSurveyShareText">Share This Survey:</SPAN>
-	    &nbsp;
-	    
-	    <span class="newSurveyShareIcons">
-  	      <a href="javascript:ajaxInlinePopup('shadowedBox','/a/jsp/run/share.jsp?surveyID=3270862&surveyUrl=http%3A%2F%2Fquestionpro.com%2Ft%2FAF81fZOaBr&name=New+Theme+Test')"><img src="http://surveys.questionpro.com/images/run/themev1/mail-icon.png" border="0"></a>
+      &nbsp;
+      
+      <span class="newSurveyShareIcons">
+          <a href="javascript:ajaxInlinePopup('shadowedBox','/a/jsp/run/share.jsp?surveyID=3270862&surveyUrl=http%3A%2F%2Fquestionpro.com%2Ft%2FAF81fZOaBr&name=New+Theme+Test')"><img src="http://surveys.questionpro.com/images/run/themev1/mail-icon.png" border="0"></a>
               &nbsp;
-	      <a href="javascript:ajaxInlinePopup('shadowedBox','/a/jsp/run/share.jsp?surveyID=3270862&surveyUrl=http%3A%2F%2Fquestionpro.com%2Ft%2FAF81fZOaBr&name=New+Theme+Test')"><img src="http://surveys.questionpro.com/images/run/themev1/facebook-icon.png" border="0"></a>
-	      &nbsp;
-	      <a href="javascript:ajaxInlinePopup('shadowedBox','/a/jsp/run/share.jsp?surveyID=3270862&surveyUrl=http%3A%2F%2Fquestionpro.com%2Ft%2FAF81fZOaBr&name=New+Theme+Test')"><img src="http://surveys.questionpro.com/images/run/themev1/twitter-icon.png" border="0"></a>
-	      &nbsp;&nbsp;
-	    </span>
-	  
-	
-	
+        <a href="javascript:ajaxInlinePopup('shadowedBox','/a/jsp/run/share.jsp?surveyID=3270862&surveyUrl=http%3A%2F%2Fquestionpro.com%2Ft%2FAF81fZOaBr&name=New+Theme+Test')"><img src="http://surveys.questionpro.com/images/run/themev1/facebook-icon.png" border="0"></a>
+        &nbsp;
+        <a href="javascript:ajaxInlinePopup('shadowedBox','/a/jsp/run/share.jsp?surveyID=3270862&surveyUrl=http%3A%2F%2Fquestionpro.com%2Ft%2FAF81fZOaBr&name=New+Theme+Test')"><img src="http://surveys.questionpro.com/images/run/themev1/twitter-icon.png" border="0"></a>
+        &nbsp;&nbsp;
+      </span>
+    
+  
+  
       </td>
 
       <td align="center" width="33%">
@@ -400,7 +372,7 @@ d.write('<sc'+'ript src="'+
               <div class="leftDiv">
                   <img src="http://surveys.questionpro.com/images/dots.png">
               </div>
-	      <div style="position:relative;float:left;left:10px;top:5px;" id="shadowedBoxBodyTitleSpinner"></div>
+        <div style="position:relative;float:left;left:10px;top:5px;" id="shadowedBoxBodyTitleSpinner"></div>
               <div id="titlePopupHeader" align="center"></div>
               <div class="closeButton">
                   <a class="iconLink" href="javascript:closeInlinePopup('shadowedBox')"><img alt="Close Window" class="iconLink" src="http://surveys.questionpro.com/images/iconshock/closeRed_16.gif" border="0"></a>&nbsp;

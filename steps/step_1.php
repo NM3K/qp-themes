@@ -1,31 +1,3 @@
-
-
-
-
-
-
-  
-
-
-
-
-<!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
-
-  <!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
 <!doctype html>
 
 <html  >
@@ -95,7 +67,7 @@ d.write('<sc'+'ript src="'+
 
       
 
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/orange-2.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/<?=$theme?>.css">
 
     
 
@@ -803,6 +775,3 @@ d.write('<sc'+'ript src="'+
 
   </body>
 </html>
-
-
-

@@ -1,31 +1,3 @@
-
-
-
-
-
-
-  
-
-
-
-
-<!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
-
-  <!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
 <!doctype html>
 
 <html  >
@@ -95,7 +67,7 @@ d.write('<sc'+'ript src="'+
 
       
 
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/<?=$theme?>.css">
 
     
 
@@ -1097,5 +1069,3 @@ function hoverInStars(elementID,answerArray,starField) {
 
   </body>
 </html>
-
-

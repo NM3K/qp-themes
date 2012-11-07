@@ -1,22 +1,5 @@
 <!doctype html>
 
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
-
-  <!doctype html>
-
-
-
-
-<!-- START /jsp/run/header.jsp -->
-
-
-<!doctype html>
-
 <html  >
 
   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
@@ -84,7 +67,7 @@ d.write('<sc'+'ript src="'+
 
       
 
-    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/green-2.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheets/<?=$theme?>.css">
 
     
 
@@ -2356,5 +2339,3 @@ function getSliderIndex($peg) {
 
   </body>
 </html>
-
-
