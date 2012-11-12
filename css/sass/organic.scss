@@ -27,6 +27,7 @@ $containerOuterShadowColor: #333;
 $exitBg: #DBDBDB;
 $exitColor: #1B9CB7;
 $exitFontWeight: bold;
+$exitBorder: false;
 
 // Font
 $fontFamily: $cambria-font-stack;
@@ -53,7 +54,7 @@ $submitBackgroundColor2: #748900;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFF;
 $submitShadow: false;
-$submitTextshadow: 0px 1px 1px #000;
+$submitTextshadow: 0px 1px 0px #000;
 $submitBoxshadow: 0 0 2px 1px #444 inset;
 
 // Option Hover
@@ -73,7 +74,7 @@ $optionHover: #E8EDCF;
 		2px 2px 15px #8C6A51 inset,
 		-2px 2px 15px #8C6A51 inset
 	);
-	border: 0px solid #EDC2A1;
+	border: 1px solid #EDC2A1;
 }
 .SurveyContent {
 	@include rgba-background(rgba(255, 255, 255, 0.75));

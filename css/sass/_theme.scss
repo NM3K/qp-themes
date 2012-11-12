@@ -674,6 +674,12 @@ a.scalePeg:hover {
 .newSurveyExitSurveyContainer {
     background-color: $exitBg;
     height:20px;
+
+    @if( $exitBorder == true ) {
+        border-color: #B4B4B4;
+        border-style: solid;
+        border-width: 0 1px;
+    }
 }
 
 a.newSurveyExit:link, 

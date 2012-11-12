@@ -26,6 +26,7 @@ $containerOuterShadowColor: #333;
 $exitBg: #DBDBDB;
 $exitColor: #1B9CB7;
 $exitFontWeight: bold;
+$exitBorder: false;
 
 // Font
 $fontFamily: $cambria-font-stack;
@@ -70,10 +71,10 @@ $optionHover: #DEEFED;
 	background:#FFF;
 	@include box-shadow(
 		0px 0px 15px #333,
-		2px 2px 15px #EDC2A1 inset,
-		-2px 2px 15px #EDC2A1 inset
+		2px 2px 15px #CCC inset,
+		-2px 2px 15px #CCC inset
 	);
-	border: 1px solid #EDC2A1;
+	border: 1px solid #CCC;
 }
 .SurveyContent {
 	background-color:transparent;
