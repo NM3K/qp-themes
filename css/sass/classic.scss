@@ -52,8 +52,8 @@ $submitBackgroundColor2: #0C4739;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFF;
 $submitShadow: false;
-$submitTextshadow: 0px 0px 0px #FFF;
-$submitBoxshadow: 0px 0px 0px 0px transparent inset;
+$submitTextshadow: 0px 1px 0px #000;
+$submitBoxshadow: 0px 0px 3px 1px #333 inset;
 
 // Option Hover
 $optionHover: #DEEFED;
@@ -70,7 +70,8 @@ $optionHover: #DEEFED;
 	background:#FFF;
 	@include box-shadow(
 		0px 0px 15px #333,
-		5px 5px 15px #EDC2A1 inset
+		2px 2px 15px #EDC2A1 inset,
+		-2px 2px 15px #EDC2A1 inset
 	);
 	border: 1px solid #EDC2A1;
 }

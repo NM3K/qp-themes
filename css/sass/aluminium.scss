@@ -33,14 +33,14 @@ $fontFamily: $lucida-grande-font-stack;
 // Headings
 $headingGradient: 1; // 1: 2 color grandient, 2: 4 color gradient
 $headingBackgroundColor1: #CED4D8;
-$headingBackgroundColor2: #A6ABAE;
+$headingBackgroundColor2: #999;
 $headingBackgroundColor3: transparent;
 $headingBackgroundColor4: transparent;
 $headingColor: #3E454A;
 $headingTextshadow: 0px 0px 2px #FFF;
-$headingBoxshadow: 0 0 0 0px transparent;
-$headingBorderWidth: 0px 0px 0px 0px;
-$headingBorderColor: #CCC;
+$headingBoxshadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px rgba(255, 255, 255, 0.28) inset;
+$headingBorderWidth: 1px 0px 0px 0px;
+$headingBorderColor: #B8B8B8;
 $headingBorderStyle: solid;
 $headingWeight: bold;
 
@@ -53,7 +53,7 @@ $submitBorder: 1px solid #AAA;
 $submitColor: #3E454A;
 $submitShadow: false;
 $submitTextshadow: 0px 1px 0px #FFF;
-$submitBoxshadow: 0px 0px 3px 1px #777 inset;
+$submitBoxshadow: 0 0 2px 1px #DDD inset;
 
 // Option Hover
 $optionHover: #E8EDF0;

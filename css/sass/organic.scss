@@ -53,8 +53,8 @@ $submitBackgroundColor2: #748900;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFF;
 $submitShadow: false;
-$submitTextshadow: 0px 0px 0px #FFF;
-$submitBoxshadow: 0px 0px 0px 0px transparent inset;
+$submitTextshadow: 0px 1px 1px #000;
+$submitBoxshadow: 0 0 2px 1px #444 inset;
 
 // Option Hover
 $optionHover: #E8EDCF;
@@ -69,7 +69,11 @@ $optionHover: #E8EDCF;
  */
 .newSurveyContainerTable {
 	background: transparent;
-	border: 0px solid transparent;
+	@include box-shadow(
+		2px 2px 15px #8C6A51 inset,
+		-2px 2px 15px #8C6A51 inset
+	);
+	border: 0px solid #EDC2A1;
 }
 .SurveyContent {
 	@include rgba-background(rgba(255, 255, 255, 0.75));

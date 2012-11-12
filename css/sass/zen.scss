@@ -53,8 +53,8 @@ $submitBackgroundColor2: #4D4230;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFF;
 $submitShadow: false;
-$submitTextshadow: 0px 0px 0px #FFF;
-$submitBoxshadow: 0px 0px 0px 0px transparent inset;
+$submitTextshadow: 0px 1px 0px #000;
+$submitBoxshadow: 0px 0px 3px 1px #999 inset;
 
 // Option Hover
 $optionHover: #F0EDDF;
@@ -71,7 +71,8 @@ $optionHover: #F0EDDF;
 	background:#FFF;
 	@include box-shadow(
 		0px 0px 15px #777,
-		5px 5px 15px #EDC2A1 inset
+		5px 5px 15px #DD9B68 inset,
+		-5px 5px 15px #DD9B68 inset
 	);
 }
 .SurveyContent {
