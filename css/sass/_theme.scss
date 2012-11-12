@@ -40,9 +40,7 @@
 // Container inner shadow? 
 @if $containerInnerShadow == true {
     .newSurveyLogoContainer {
-        -webkit-box-shadow: 5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset;
-        -moz-box-shadow: 5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset;
-        box-shadow: 5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset;
+        @include box-shadow(5px 5px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset);
         border-left: 1px solid $containerInnerShadowColor;
         border-top: 1px solid $containerInnerShadowColor;
         border-right: 1px solid $containerInnerShadowColor;
@@ -54,10 +52,8 @@
     //     border: solid 1px #b8b8b8;
     // }
     .newSurveyQuestionsTable {
-        border: 1px solid darken($containerInnerShadowColor, 5%);
-        -moz-box-shadow: inset 5px 0 5px -5px $containerInnerShadowColor, inset -5px 0 5px -5px $containerInnerShadowColor;
-        -webkit-box-shadow: inset 5px 0 5px -5px $containerInnerShadowColor, inset -5px 0 5px -5px $containerInnerShadowColor;
-        box-shadow: inset 5px 0 5px -5px $containerInnerShadowColor, inset -5px 0 5px -5px $containerInnerShadowColor;
+        border: 1px solid $containerInnerShadowColor;
+        @include box-shadow(5px 0px 5px -5px $containerInnerShadowColor inset, -5px 0 5px -5px $containerInnerShadowColor inset);
     }
 }
 
@@ -669,7 +665,7 @@ a.scalePeg:hover {
 .newSurveyTitle {
     font-family: $fontFamily;
     font-weight: bold;
-    text-shadow: 0 0 4px rgba(2,3,3,.75);
+    @include text-shadow(0px 0px 4px rgba(2, 3, 3, 0.75));
     font-size: 18px;
     color: #fff;
     padding-left: 18px;
@@ -1045,11 +1041,11 @@ input#SurveySubmitButtonElement {
         @include border-radius(0px);
     }
 
-    @if $submitShadow == true {
-        @include box-shadow(0px 0px 2px darken($submitBackgroundColor1, 10%));
-    } @else {
-        @include box-shadow(0px 0px 0px 0px $submitBackgroundColor1 inset);
-    }
+    // @if $submitShadow == true {
+    //     @include box-shadow(0px 0px 2px darken($submitBackgroundColor1, 10%));
+    // } @else {
+    //     @include box-shadow(0px 0px 0px 0px $submitBackgroundColor1 inset);
+    // }
 
     // Background
     @if $submitBackground == gradient {
@@ -1062,6 +1058,8 @@ input#SurveySubmitButtonElement {
         @include filter-gradient($submitBackgroundColor1, $submitBackgroundColor1);
         @include background-image(linear-gradient($submitBackgroundColor1, $submitBackgroundColor1));
     } 
+
+    @include box-shadow( $submitBoxshadow );
 
     border: $submitBorder;
     color: $submitColor !important;
@@ -1118,6 +1116,8 @@ input#SurveySubmitButtonElement {
         @include background-image(linear-gradient($headingBackgroundColor1, $headingBackgroundColor1));
 
     }
+
+    @include box-shadow( $headingBoxshadow );
 
     border-width: $headingBorderWidth;
     border-color: $headingBorderColor;

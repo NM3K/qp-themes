@@ -39,6 +39,7 @@ $headingBackgroundColor3: transparent;
 $headingBackgroundColor4: transparent;
 $headingColor: #FFF;
 $headingTextshadow: 0px 0px 0px #FFF;
+$headingBoxshadow: 0 0 0 0px transparent;
 $headingBorderWidth: 0px 0px 0px 0px;
 $headingBorderColor: #bbb;
 $headingBorderStyle: solid;
@@ -53,6 +54,7 @@ $submitBorder: 0px solid #AAA;
 $submitColor: #FFF;
 $submitShadow: false;
 $submitTextshadow: 0px 0px 0px #FFF;
+$submitBoxshadow: 0px 0px 0px 0px transparent inset;
 
 // Option Hover
 $optionHover: #F0EDDF;

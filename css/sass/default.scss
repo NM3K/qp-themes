@@ -18,7 +18,7 @@ $backgroundColor: transparent;
 
 // Body Shadow
 $containerInnerShadow: true;
-$containerInnerShadowColor: #B4B4B4;
+$containerInnerShadowColor: #CCC;
 $containerOuterShadow: false;
 $containerOuterShadowColor: #999;
 
@@ -32,26 +32,28 @@ $fontFamily: $lucida-grande-font-stack;
 
 // Headings
 $headingGradient: 1; // 1: 2 color grandient, 2: 4 color gradient, false: plain
-$headingBackgroundColor1: #BEBEBE;
+$headingBackgroundColor1: #C0C0C0;
 $headingBackgroundColor2: #8D8D8D;
 $headingBackgroundColor3: transparent;
 $headingBackgroundColor4: transparent;
 $headingColor: #FFFFFF;
-$headingTextshadow: 0px 0px 0px #FFF;
-$headingBorderWidth: 0px 0px 0px 0px;
-$headingBorderColor: transparent;
+$headingTextshadow: 0px 0px 4px rgba(2, 3, 3, 0.75);
+$headingBoxshadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px rgba(255, 255, 255, 0.28) inset;
+$headingBorderWidth: 1px 0px 0px 0px;
+$headingBorderColor: #B8B8B8;
 $headingBorderStyle: solid;
 $headingWeight: bold;
 
 // Submit Button
 $submitRounded: true;
 $submitBackground: gradient; // gradient, plain
-$submitBackgroundColor1: #BEBEBE;
-$submitBackgroundColor2: #8D8D8D;
-$submitBorder: 0px solid #AAA;
+$submitBackgroundColor1: #61C1FD;
+$submitBackgroundColor2: #0483CA;
+$submitBorder: 1px solid #0095E2;
 $submitColor: #FFFFFF;
 $submitShadow: false;
 $submitTextshadow: 0px 0px 0px #FFF;
+$submitBoxshadow: 0px 0px 3px 1px #0D64AD inset;
 
 // Option Hover
 $optionHover: #D5EFFA;

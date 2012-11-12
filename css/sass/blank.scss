@@ -38,6 +38,7 @@ $headingBackgroundColor3: transparent;
 $headingBackgroundColor4: transparent;
 $headingColor: #555555;
 $headingTextshadow: 0px 0px 0px #FFF;
+$headingBoxshadow: 0 0 0 0px transparent;
 $headingBorderWidth: 0px 0px 1px 0px;
 $headingBorderColor: #D5D5D5;
 $headingBorderStyle: solid;
@@ -45,13 +46,14 @@ $headingWeight: bold;
 
 // Submit Button
 $submitRounded: true;
-$submitBackground: plain; // gradient, plain
+$submitBackground: gradient; // gradient, plain
 $submitBackgroundColor1: #FFFFFF;
-$submitBackgroundColor2: transparent;
+$submitBackgroundColor2: #F3F3F3;
 $submitBorder: 1px solid #AAA;
 $submitColor: #555555;
 $submitShadow: false;
-$submitTextshadow: 0px 0px 0px #FFF;
+$submitTextshadow: 0px 1px 0px #FFF;
+$submitBoxshadow: 0px 0px 5px 0px #CCC;
 
 // Option Hover
 $optionHover: #F3F3F3;

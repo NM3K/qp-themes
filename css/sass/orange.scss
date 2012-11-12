@@ -17,9 +17,9 @@ $backgroundEnd: #C7C7C7;
 $backgroundColor: transparent;
 
 // Body Shadow
-$containerInnerShadow: false;
-$containerInnerShadowColor: transparent;
-$containerOuterShadow: true;
+$containerInnerShadow: true;
+$containerInnerShadowColor: #B4B4B4;
+$containerOuterShadow: false;
 $containerOuterShadowColor: #999;
 
 // Exit
@@ -37,7 +37,8 @@ $headingBackgroundColor2: #d26c31;
 $headingBackgroundColor3: #ca5e20;
 $headingBackgroundColor4: #b64a0b;
 $headingColor: #FFFFFF;
-$headingTextshadow: 0px 0px 0px #FFF;
+$headingTextshadow: 0px 0px 4px rgba(2, 3, 3, 0.75);
+$headingBoxshadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px rgba(255, 255, 255, 0.28) inset;
 $headingBorderWidth: 0px 0px 0px 0px;
 $headingBorderColor: transparent;
 $headingBorderStyle: solid;
@@ -45,13 +46,14 @@ $headingWeight: bold;
 
 // Submit Button
 $submitRounded: true;
-$submitBackground: plain; // gradient, plain
-$submitBackgroundColor1: #dc6623;
-$submitBackgroundColor2: transparent;
+$submitBackground: gradient; // gradient, plain
+$submitBackgroundColor1: #D3601D;
+$submitBackgroundColor2: #893B15;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFFFFF;
 $submitShadow: false;
-$submitTextshadow: 0px 0px 0px #FFF;
+$submitTextshadow: 0px 1px 0px #000;
+$submitBoxshadow: 0px 0px 3px 1px #DDD inset;
 
 // Option Hover
 $optionHover: #F7EEE9;
