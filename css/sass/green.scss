@@ -12,8 +12,8 @@ $experimental-support-for-svg: true;
 // Background
 $backgroundType: gradient; // gradient, image, plain
 $backgroundImageUrl: false;
-$backgroundStart: #C3C3C3;
-$backgroundEnd: #727272;
+$backgroundStart: #F8F8F8;
+$backgroundEnd: #C7C7C7;
 $backgroundColor: transparent;
 
 // Body Shadow
@@ -32,10 +32,10 @@ $fontFamily: $lucida-grande-font-stack;
 
 // Headings
 $headingGradient: 2; // 1: 2 color grandient, 2: 4 color gradient, false: plain
-$headingBackgroundColor1: #4A8741;
-$headingBackgroundColor2: #407C36;
-$headingBackgroundColor3: #37722E;
-$headingBackgroundColor4: #2F6325;
+$headingBackgroundColor1: #49883e;
+$headingBackgroundColor2: #4b8a40;
+$headingBackgroundColor3: #3d7d32;
+$headingBackgroundColor4: #2f6327;
 $headingColor: #FFFFFF;
 $headingTextshadow: 0px 0px 0px #FFF;
 $headingBorderWidth: 0px 0px 0px 0px;
@@ -46,7 +46,7 @@ $headingWeight: bold;
 // Submit Button
 $submitRounded: true;
 $submitBackground: plain; // gradient, plain
-$submitBackgroundColor1: #3F8434;
+$submitBackgroundColor1: #49883e;
 $submitBackgroundColor2: transparent;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFFFFF;

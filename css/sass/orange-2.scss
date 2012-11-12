@@ -32,10 +32,10 @@ $fontFamily: $lucida-grande-font-stack;
 
 // Headings
 $headingGradient: 2; // 1: 2 color grandient, 2: 4 color gradient, false: plain
-$headingBackgroundColor1: #EC7533;
-$headingBackgroundColor2: #D5682D;
-$headingBackgroundColor3: #CB5F1F;
-$headingBackgroundColor4: #AF5018;
+$headingBackgroundColor1: #dc6623;
+$headingBackgroundColor2: #d26c31;
+$headingBackgroundColor3: #ca5e20;
+$headingBackgroundColor4: #b64a0b;
 $headingColor: #FFFFFF;
 $headingTextshadow: 0px 0px 0px #FFF;
 $headingBorderWidth: 0px 0px 0px 0px;
@@ -46,7 +46,7 @@ $headingWeight: bold;
 // Submit Button
 $submitRounded: true;
 $submitBackground: plain; // gradient, plain
-$submitBackgroundColor1: #EB6B22;
+$submitBackgroundColor1: #dc6623;
 $submitBackgroundColor2: transparent;
 $submitBorder: 0px solid #AAA;
 $submitColor: #FFFFFF;
