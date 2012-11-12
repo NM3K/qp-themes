@@ -8,7 +8,7 @@ $themes = array(
 	'classic',
 	'green',
 	'green-2',
-	'grey',
+	// 'grey',
 	'navy',
 	'navy-2',
 	'orange',
