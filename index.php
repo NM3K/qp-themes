@@ -52,6 +52,9 @@ $themes = array(
 							<a target="_blank" href="view.php?step=<?=$step?>&theme=<?=$theme?>">Step <?=$step?></a>
 						</li>
 					<?php endforeach; ?>
+						<li>
+							<a target="_blank" href="view.php?step=7&theme=<?=$theme?>">Step 7 header without logo</a>
+						</li>
 					</ul>
 			<?php endforeach; ?>
 		</div>
