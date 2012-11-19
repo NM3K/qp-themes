@@ -193,11 +193,11 @@ d.write('<sc'+'ript src="'+
 
 
 
-<table width="100%" align="center" cellpadding="0" cellspacing="0" class="newSurveynameContainer">
+<table width="100%" align="center" cellpadding="0" cellspacing="0" class="newSurveynameContainerWithoutLogo">
   <tr>
     <td width="50%">
       <div class="newSurveyTitle">
-	My New Survey - KOTO
+  Survey Without Logo
       </div>
     </td>
   </tr>

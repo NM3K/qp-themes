@@ -650,7 +650,7 @@ a.scalePeg:hover {
     margin-bottom: 30px;
 }
 
-.newSurveynameContainer {
+.newSurveynameContainer, .newSurveynameContainerWithoutLogo {
     padding: 8px 0;
     *background-color: #dcdcdc;
     background-image: -webkit-linear-gradient(bottom, #8d8d8d 20%, #c0c0c0);
@@ -660,6 +660,21 @@ a.scalePeg:hover {
     background-image: linear-gradient(to top, #8d8d8d 20%, #c0c0c0);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c0c0', endColorstr='#8d8d8d', GradientType=0 );
     height: 40px;
+
+    .newSurveyTitle {
+        font-family: $fontFamily;
+        font-weight: bold;
+        @include text-shadow(0px 0px 4px rgba(2, 3, 3, 0.75));
+        font-size: 18px;
+        color: #fff;
+        padding: 0px 0px 0px 18px;
+    }
+}
+
+.newSurveynameContainerWithoutLogo {
+    .newSurveyTitle {
+        padding: 14px 18px;
+    }
 }
 
 .newSurveyTitle {
@@ -1087,7 +1102,7 @@ input#SurveySubmitButtonElement {
 
 }
 
-.newSurveynameContainer {
+.newSurveynameContainer, .newSurveynameContainerWithoutLogo {
     @if $headingGradient == 1 {
 
         @include filter-gradient($headingBackgroundColor1, $headingBackgroundColor2);
