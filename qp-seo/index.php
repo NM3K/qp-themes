@@ -35,7 +35,7 @@
 
   </head>
 
-  <body style="background:url('http://www.questionpro.com/images/qphome/mainbg-ii.png') repeat-x top left;">
+  <body style="background:url('http://www.questionpro.com/images/qphome/mainbg-ii.png') repeat-x top left;" class="seo">
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

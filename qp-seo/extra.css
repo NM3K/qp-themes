@@ -28,16 +28,16 @@
 }
 
 .seo-row h1 {
-	border-bottom: 3px solid #11254A;
-    color: #11254A;
+	border-bottom: 3px solid #17284E;
+    color: #17284E;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
     padding-bottom: 10px;
 }
 .seo-row h2 {
-	border-bottom: 1px solid #11254A;
-    color: #11254A;
+	border-bottom: 1px solid #AAA;
+    color: #17284E;
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 5px;
@@ -49,10 +49,19 @@
 	color:#489AD7;
 	text-decoration: underline;
 }
-.seo-row ul {}
+.seo-row ul {
+	list-style-type: none;
+}
+
 .seo-row ul.no-bullets {
 	list-style-type: none;
 }
+.seo-row ul.no-bullets li:before {
+	content: "";
+	color:transparent;
+	padding-right: 0px;
+}
+
 .seo-row ul li {
 	margin-bottom:5px;
 }
@@ -71,12 +80,12 @@
 
 .seo-row .widget.signup {
 	background:#F1F6FA;
-	border:1px solid #AAD3E7;
+	border:1px solid #489AD7;
 	text-align:left;
 	padding: 15px 15px;
 }
 .seo-row .widget.signup h3 {
-	color: #11254A;
+	color: #17284E;
 	font-weight: 700;
 	font-size:16px;
 	margin:0px 0px 5px;
@@ -237,7 +246,8 @@
     padding:0px;
 }
 .footer-links .row .col ul {
-	margin: 0 0 0 20px;
+	list-style-type: none;
+	margin: 0 0 0 10px;
     padding-left: 10px;
 }
 .footer-links .row .col ul li {
@@ -253,17 +263,24 @@
 	text-decoration: underline;
 }
 
+.footer-links ul li:before,
+.seo-row ul li:before {
+    content: "\002022";
+    color: #489AD7; /* or whatever color you prefer */
+    font-weight: 700;
+    padding-right: 9px;
+}
 
-/*<div class="footer-links">
 
-  <h1>Additional Readings</h1>
 
-  <div class="row">
-    <div class="col">
-      <h3>QuestionPro Online Research</h3>
-      <ul>
-        <li><a href="#">Surveys for Facebook Notes</a></li>
-        <li><a href="#">Surveys for MySpace</a></li>
-        <li><a href="#">Love Survey Facebook</a></li>
-        <li><a href="#">Funny Survey Facebook</a></li>
-      </ul>*/
+/* New Header Stuff */
+body.seo > div > table {
+	margin-top:-8px;
+}
+body.seo {
+	background-position:0px -30px !important;
+	border-top:8px solid #182E56;
+}
+body.seo .r2 {
+	height:124px;
+}
