@@ -60,7 +60,7 @@
 
 			<br>
 
-			<p><strong>We help thousand ofhappy customers</strong></p>
+			<p><strong>We help thousand of happy customers</strong></p>
 
 			<div class="brands"></div>
 		</div>
