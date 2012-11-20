@@ -283,15 +283,17 @@
 }
 
 
-
 /* New Header Stuff */
-body.seo > div > table {
-	margin-top:-8px;
-}
+/*
 body.seo {
 	background-position:0px -30px !important;
 	border-top:8px solid #182E56;
 }
+*/
+body.seo > div > table {
+	margin-top:-8px;
+}
 body.seo .r2 {
 	height:124px;
+	margin-top: 10px;
 }
