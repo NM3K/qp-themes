@@ -162,6 +162,9 @@
 	text-align:left;
 	padding: 15px 15px;
 }
+.seo-row .widget.clients div.image-left p {
+	padding-left:150px;
+}
 .seo-row .widget.clients img.left {
 	float:left;
 	margin-right: 15px;

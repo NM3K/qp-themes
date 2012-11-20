@@ -52,10 +52,10 @@
 		</div>
 
 		<div class="widget clients">
-			<div>
+			<div class="image-left">
 				<img src="inc500.png" alt="" class="left">
 				<p><strong>We're one of America's fastest growing provate companies!</strong></p>
-				<p style="padding-left:155px;">Survey Analytics (our parent company) place 172nd with 1390% growth.</p>
+				<p>Survey Analytics (our parent company) place 172nd with 1390% growth.</p>
 			</div>
 
 			<br>
