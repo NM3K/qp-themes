@@ -45,7 +45,7 @@
 
 			<form action="#">
 				<input type="text" class="email" placeholder="Email address">
-				<input type="image" src="signup.jpg" class="submit" value="Get started">
+				<input type="submit" class="submit" value="Get started">
 			</form>
 
 			<p><strong>Not ready yet?</strong> <a href="#" class="tour">Take the tour</a></p>
@@ -53,7 +53,7 @@
 
 		<div class="widget clients">
 			<div>
-				<img src="inc500.jpg" alt="" class="left">
+				<img src="inc500.png" alt="" class="left">
 				<p><strong>We're one of America's fastest growing provate companies!</strong></p>
 				<p>Survey Analytics (our parent company) place 172nd with 1390% growth.</p>
 			</div>
