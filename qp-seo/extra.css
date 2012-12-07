@@ -6,14 +6,17 @@
 	margin:0 auto;
 }
 
+.seo-row, .seo-join, .footer-links, .more-links {
+	width:950px;
+}
+
 .seo-row {
 	margin:50px 0px 20px;
-	width:100%;
 	clear:both;
 }
 
 .seo-row .col-left {
-	width:575px;
+	width:500px;
 	margin-right:10px;
 	float:left;
 }
@@ -240,7 +243,7 @@
 }
 .footer-links .row .col {
 	float:left;
-	width:320px;
+	width:306px;
 	margin-right:10px;
 }
 .footer-links .row .cb {
