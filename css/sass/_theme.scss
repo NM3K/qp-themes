@@ -1102,7 +1102,7 @@ input#SurveySubmitButtonElement {
 
 }
 
-.newSurveynameContainer, .newSurveynameContainerWithoutLogo {
+.newSurveynameContainer, .newSurveynameContainerWithoutLogo, .SurveySubHeading {
     @if $headingGradient == 1 {
 
         @include filter-gradient($headingBackgroundColor1, $headingBackgroundColor2);
@@ -1149,4 +1149,12 @@ input#SurveySubmitButtonElement {
         @include text-shadow($headingTextshadow);
         font-weight: $headingWeight;
     }
+}
+
+.SurveySubHeading { 
+    font-size: 15px;
+    color: $headingColor;
+    @include text-shadow($headingTextshadow);
+    font-weight: $headingWeight;
+    padding: 5px 10px;
 }

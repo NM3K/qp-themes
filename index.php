@@ -55,6 +55,9 @@ $themes = array(
 						<li>
 							<a target="_blank" href="view.php?step=7&theme=<?=$theme?>">Step 7 header without logo</a>
 						</li>
+						<li>
+							<a target="_blank" href="view.php?step=8&theme=<?=$theme?>">Step 8 subheadings</a>
+						</li>
 					</ul>
 			<?php endforeach; ?>
 		</div>
