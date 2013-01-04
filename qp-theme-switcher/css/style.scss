@@ -1,0 +1,23 @@
+.multiThemeSelector {
+	text-align:center;
+	select {
+		margin:15px auto;
+		width:250px;
+
+		option {
+			outline:none;
+		}
+
+		option[selected=selected],
+		option:active,
+		option:focus {
+			background: #D5EFFA !important;
+		}
+	}
+}
+
+.dashedSingleLine {
+	a.cancel:hover {
+		text-decoration: none;
+	}
+}
