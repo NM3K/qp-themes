@@ -33,11 +33,11 @@ $themes = array(
 							<?php foreach($themes as $key => $theme): ?>
 								<div class="carousel-feature" data-theme="<?=$key?>">
 									<a href="#">
-										<img class="carousel-image" src="http://placehold.it/230x200&text=<?=urlencode($key . " - " . $theme)?>" alt="<?=$theme?>">
+										<img class="carousel-image" src="img/<?=$key?>.png" alt="<?=$theme?>" width="230" height="240">
 									</a>
 									<div class="carousel-caption">
 										<p>
-											<?=$key . " - " . $theme?>
+											<?=$theme?>
 										</p>
 									</div>
 								</div>

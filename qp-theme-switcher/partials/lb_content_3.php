@@ -32,11 +32,9 @@ $themes = array(
 						<p>
 							Load a theme to customize:
 							<select name="" id="">
-								<option value="">
-									<?php foreach($themes as $key => $theme): ?>
-										<option value="<?=$key?>"><?=$theme?></option>
-									<?php endforeach; ?>
-								</option>
+								<?php foreach($themes as $key => $theme): ?>
+									<option value="<?=$key?>"><?=$theme?></option>
+								<?php endforeach; ?>
 							</select>
 						</p>
 					</div>
@@ -44,12 +42,9 @@ $themes = array(
 					<div class="textarea">
 						<textarea name="" id="">
 body {
-	font-size: 62.5%;
-	background:#000;
-}
-
-table {
-	font-size: 1em;
+  font-size: 62.5%;
+  background:#000;
+  font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 }
 
 h1 {
@@ -58,13 +53,6 @@ h1 {
   letter-spacing:-1px;
   font-family:Arial;
   text-align:center;
-}
-
-/* Site
-   -------------------------------- */
-
-body {
-	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 }
 
 						</textarea>
