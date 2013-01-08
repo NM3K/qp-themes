@@ -28,32 +28,48 @@ $themes = array(
 			<tr>
 				<td>
 
-					<div class="carousel-container">
-						<div id="carousel">
-							<?php foreach($themes as $key => $theme): ?>
-								<div class="carousel-feature" data-theme="<?=$key?>">
-									<a href="#">
-										<img class="carousel-image" src="http://placehold.it/230x200&text=<?=urlencode($key . " - " . $theme)?>" alt="<?=$theme?>">
-									</a>
-									<div class="carousel-caption">
-										<p>
-											<?=$key . " - " . $theme?>
-										</p>
-									</div>
-								</div>
-							<?php endforeach; ?>
+					<div class="colOptions">
+						<p class="mt0">
+							<label for="">Font</label>
+							<select data-bind="options: fontFamily, value: selectedFontFamily"></select>
+						</p>
+						<p>
+							<label for="">Font size</label>
+							<select data-bind="options: fontSizes, value: selectedFontSize"></select>
+						</p>
+						<p>
+							<label for="">Background</label>
+							<input data-bind="value: backgroundColor" id="backgroundColor" name="backgroundColor" value="#8C8C8C" class="color {hash:true} colorLarge">
+						</p>
+						<p>
+							<label for="">Title bars</label>
+							<input data-bind="value: titleColor" value="#D55C5C" class="color {hash:true} colorLarge">
+						</p>
+						<p>
+							<label for="">Hover</label>
+							<button type="button" class="smallcolor" data-bind="click: setHoverColor" data-color="#CFCFCF" style="background:#CFCFCF;"></button>
+							<button type="button" class="smallcolor" data-bind="click: setHoverColor" data-color="#BFDDE6" style="background:#BFDDE6;"></button>
+							<button type="button" class="smallcolor" data-bind="click: setHoverColor" data-color="#E6BFBF" style="background:#E6BFBF;"></button>
+							<button type="button" class="smallcolor" data-bind="click: setHoverColor" data-color="#CAE6BF" style="background:#CAE6BF;"></button>
+						</p>
+						<p>
+							<label for="">Buttons</label>
+							<input data-bind="value: buttonColor" value="#D55C5C" class="color {hash:true} colorLarge">
+						</p>
+						<p>
+							<label for="">Progress Bar</label>
+							<input data-bind="value: progressColor" value="#00D580" class="color {hash:true} colorLarge">
+						</p>
+					</div>
+					<div class="colThumb">
+						<div class="themePreview">
+							<div data-bind="template: { name: 'themePreview' }"></div>
 						</div>
 					</div>
 
-					<div class="multiThemeSelector">
-						<select name="" id="" size="4">
-							<?php foreach($themes as $key => $theme): ?>
-								<option value="<?=$key?>"><?=$theme?></option>
-							<?php endforeach; ?>
-						</select>
-					</div>
+					<div class="clearBox"></div>
 
-					<div class="dashedSingleLine createQAddAnotherAlign">
+					<div class="dashedSingleLine createQAddAnotherAlign" style="width:101%;">
 						<table width="100%">
 							<tr>
 								<td align="right">
@@ -74,3 +90,91 @@ $themes = array(
 		</table>
 	</form>                               
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	function viewModel() {
+
+		var self = this;
+
+		self.fontSizes = ["Small", "Medium", "Large"];
+		self.selectedFontSize = ko.observable('Medium');
+
+		self.fontFamily = ["Verdana", "Arial", "Times News Roman"];
+		self.selectedFontFamily = ko.observable('Aria;');
+
+		self.backgroundColor = ko.observable("#8C8C8C");
+		self.titleColor = ko.observable("#D55C5C");
+
+		self.hoverColor = ["#CFCFCF", "#BFDDE6", "#E6BFBF", "#CAE6BF"];
+		self.selectedHoverColor = ko.observable('#BFDDE6');
+
+		self.buttonColor = ko.observable("#D55C5C");
+		self.progressColor = ko.observable("#00D580");
+
+		self.setHoverColor = function(data, event) {
+			var target;
+
+			if (event.target) target = event.target;
+			else if (event.srcElement) target = event.srcElement;
+
+			if (target.nodeType == 3) // defeat Safari bug
+			target = target.parentNode;
+
+			self.selectedHoverColor($(target).data('color'));
+		}
+
+		self.fontSizePx = ko.computed(function() {
+			switch (self.selectedFontSize()) {
+				case "Small":
+					return "12px";
+					break;
+				case "Medium":
+					return "14px";
+					break;
+				case "Large":
+					return "16px";
+					break;
+
+			}
+    	}, self);
+	};
+
+	ko.applyBindings(new viewModel);	
+});
+</script>
+
+<script type="text/html" id="themePreview">
+	<div class="bgContainer" data-bind="style: { backgroundColor: backgroundColor} ">
+		<div class="previewContainer" data-bind="style: { fontFamily: selectedFontFamily, fontSize: fontSizePx} ">
+			<h1 class="surveyTitle" data-bind="style: { backgroundColor: titleColor, fontFamily: selectedFontFamily} ">
+				Survey Title
+			</h1>
+			<div class="progress">
+				<div class="progressBar" data-bind="style: { backgroundColor: progressColor } "></div>
+			</div>
+			<div class="question">
+				<h3>1. How long have you been our customer?</h3>
+				<ul>
+					<li>Less than 1 month</li>
+					<li data-bind="style: { backgroundColor: selectedHoverColor } ">Between 1 and 6 months</li>
+					<li>Between 1 year and 5 years</li>
+					<li>More than 5 years</li>
+				</ul>
+			</div>
+			<h4 class="subtitle" data-bind="style: { backgroundColor: titleColor } ">Section Heading</h4>
+			<div class="question">
+				<h3>2. How long have you been our customer?</h3>
+				<ul>
+					<li>Less than 1 month</li>
+					<li data-bind="style: { backgroundColor: selectedHoverColor } ">Between 1 and 6 months</li>
+					<li>Between 1 year and 5 years</li>
+					<li>More than 5 years</li>
+				</ul>
+			</div>
+			<div class="actions">
+				<a class="next" data-bind="style: { backgroundColor: buttonColor } ">Next</a>
+			</div>
+		</div>
+	</div>	
+</script>
