@@ -21,11 +21,20 @@
 		<div class="container">
 			<h1>Theme Switcher</h1>
 			<ol>
-				<li><a target="_blank" href="step_1.php">Select theme</a></li>
-				<li><a target="_blank" href="step_2.php">Customize</a></li>
-				<li><a target="_blank" href="step_3.php">Full control</a></li>
+				<li>
+					<a target="_blank" href="step_1.php">Select theme</a> | <a target="_blank" href="mockups/1.select.png">Mockup</a>
+				 </li>
+				<li>
+					<a target="_blank" href="step_2.php">Customize</a> | <a target="_blank" href="mockups/2.custom.png">Mockup</a>
+				 </li>
+				<li>
+					<a target="_blank" href="step_3.php">Full control</a> | <a target="_blank" href="mockups/3.full.png">Mockup</a>
+				 </li>
 			</ol>
 		</div>
 
 	</body>
 </html>
+
+
+
